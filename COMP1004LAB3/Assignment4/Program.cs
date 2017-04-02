@@ -24,7 +24,7 @@ namespace Assignment4
             orderedProduct = new product();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SelectForm());
+            Application.Run(new SplashForm());
         }
     }
 }

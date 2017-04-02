@@ -38,9 +38,10 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(57, 65);
+            this.pictureBox2.BackgroundImage = global::Assignment4.Properties.Resources.comp21;
+            this.pictureBox2.Location = new System.Drawing.Point(57, 70);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(203, 206);
+            this.pictureBox2.Size = new System.Drawing.Size(677, 248);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -49,35 +50,35 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 34);
+            this.label1.Location = new System.Drawing.Point(324, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 16);
+            this.label1.Size = new System.Drawing.Size(82, 16);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Order Your Computer Today!";
+            this.label1.Text = "Computers";
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(57, 291);
+            this.StartButton.Location = new System.Drawing.Point(57, 338);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(203, 23);
+            this.StartButton.Size = new System.Drawing.Size(198, 33);
             this.StartButton.TabIndex = 4;
             this.StartButton.Text = "Start A New Order";
             this.StartButton.UseVisualStyleBackColor = true;
             // 
             // OpenButton
             // 
-            this.OpenButton.Location = new System.Drawing.Point(57, 320);
+            this.OpenButton.Location = new System.Drawing.Point(280, 338);
             this.OpenButton.Name = "OpenButton";
-            this.OpenButton.Size = new System.Drawing.Size(203, 23);
+            this.OpenButton.Size = new System.Drawing.Size(205, 33);
             this.OpenButton.TabIndex = 5;
             this.OpenButton.Text = "Open a Saved Order";
             this.OpenButton.UseVisualStyleBackColor = true;
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(57, 349);
+            this.ExitButton.Location = new System.Drawing.Point(531, 338);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(203, 23);
+            this.ExitButton.Size = new System.Drawing.Size(203, 33);
             this.ExitButton.TabIndex = 6;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
@@ -86,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 391);
+            this.ClientSize = new System.Drawing.Size(766, 383);
             this.ControlBox = false;
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.OpenButton);
@@ -96,7 +97,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StartForm";
-            this.Text = "Welcome to Dollars Computer";
+            this.Text = "StartForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

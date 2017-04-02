@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
             this.LoadingTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -39,14 +38,14 @@
             this.LoadingTimer.Interval = 3000;
             this.LoadingTimer.Tick += new System.EventHandler(this.LoadingTimer_Tick);
             // 
-            // SplashScreen
+            // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(581, 338);
+            this.BackgroundImage = global::Assignment4.Properties.Resources.rsz_1workstation_147953_960_720;
+            this.ClientSize = new System.Drawing.Size(719, 473);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SplashScreen";
+            this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
             this.ResumeLayout(false);

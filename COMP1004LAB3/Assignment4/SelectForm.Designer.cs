@@ -59,6 +59,7 @@
             this.ProductsDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProductsDataGridView.Size = new System.Drawing.Size(802, 284);
             this.ProductsDataGridView.TabIndex = 2;
+            this.ProductsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsDataGridView_CellContentClick);
             // 
             // SelectionLabel
             // 
@@ -78,7 +79,6 @@
             this.SummaryTextBox.Size = new System.Drawing.Size(507, 22);
             this.SummaryTextBox.TabIndex = 7;
             this.SummaryTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
             // 
             // CancelButton
             // 
