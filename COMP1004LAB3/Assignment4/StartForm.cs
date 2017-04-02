@@ -34,7 +34,7 @@ namespace Assignment4
         {
             this.Hide();
             ProductInfoForm productInfoForm = new ProductInfoForm();
-            //productInfoForm.previousForm = this;
+            productInfoForm.previousForm = this;
             productInfoForm.Show();
         }
 
