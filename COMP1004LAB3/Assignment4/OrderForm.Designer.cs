@@ -67,7 +67,6 @@
             this.txt_cpuBrand = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_memory = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PriceGroupBox = new System.Windows.Forms.GroupBox();
             this.txt_total = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -78,11 +77,12 @@
             this.btn_back = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_finish = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip_order.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.TechSpecsGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PriceGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip_order
@@ -109,14 +109,14 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
@@ -131,7 +131,7 @@
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.backToolStripMenuItem.Text = "&Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.btn_back_Click);
             // 
@@ -146,7 +146,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -438,16 +438,6 @@
             this.txt_memory.Size = new System.Drawing.Size(148, 20);
             this.txt_memory.TabIndex = 17;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Assignment4.Properties.Resources.comp21;
-            this.pictureBox1.Location = new System.Drawing.Point(450, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 133);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
             // PriceGroupBox
             // 
             this.PriceGroupBox.Controls.Add(this.txt_total);
@@ -456,7 +446,7 @@
             this.PriceGroupBox.Controls.Add(this.label1);
             this.PriceGroupBox.Controls.Add(this.txt_cost);
             this.PriceGroupBox.Controls.Add(this.label3);
-            this.PriceGroupBox.Location = new System.Drawing.Point(450, 183);
+            this.PriceGroupBox.Location = new System.Drawing.Point(449, 189);
             this.PriceGroupBox.Name = "PriceGroupBox";
             this.PriceGroupBox.Size = new System.Drawing.Size(226, 114);
             this.PriceGroupBox.TabIndex = 28;
@@ -544,6 +534,16 @@
             this.btn_finish.UseVisualStyleBackColor = true;
             this.btn_finish.Click += new System.EventHandler(this.btn_finish_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Assignment4.Properties.Resources.rsz_11rsz_image23;
+            this.pictureBox1.Location = new System.Drawing.Point(458, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,9 +568,9 @@
             this.ProductInfoGroupBox.PerformLayout();
             this.TechSpecsGroupBox.ResumeLayout(false);
             this.TechSpecsGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PriceGroupBox.ResumeLayout(false);
             this.PriceGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

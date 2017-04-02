@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*Name:-Gowtham Talluri
+ StudentID :- 200335297
+ App:-Dollar Computer
+ Description:- Online computer sale cart
+ */
+
 namespace Assignment4
 {
     public partial class OrderForm : Form
@@ -20,33 +26,32 @@ namespace Assignment4
             InitializeComponent();
         }
 
-        //--------------------------------------------------------------------------------------------------------
-        // Show a message box displaying some info
-        //--------------------------------------------------------------------------------------------------------
+        // Show a message box displaying about window
+      
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Gowtham Talluri \nDollarComputers \nwww.computerinfo.com \nSupport: (705)500-1868", "Dollar Computers", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Gowtham Talluri \nComputers \nwww.computerinfo.com \nSupport: (705)500-1868", "Dollar Computers", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        //--------------------------------------------------------------------------------------------------------
-        // Show a message box notifying user that their order is being printed
-        //--------------------------------------------------------------------------------------------------------
+      
+        // Show a message box for printer
+  
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Your order is being printed", "Dollar Computers", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        //--------------------------------------------------------------------------------------------------------
-        // Close the app
-        //--------------------------------------------------------------------------------------------------------
+     
+        // Close application
+    
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        //--------------------------------------------------------------------------------------------------------
+       
         // Show message box to confirm order and close the app when the user clicks OK
-        //--------------------------------------------------------------------------------------------------------
+   
         private void btn_finish_Click(object sender, EventArgs e)
         {
 
@@ -56,9 +61,9 @@ namespace Assignment4
             }
         }
 
-        //--------------------------------------------------------------------------------------------------------
+      
         // Populate text boxes, and do cost calculations
-        //--------------------------------------------------------------------------------------------------------
+  
         private void OrderForm_Load(object sender, EventArgs e)
         {
             txt_condition.Text = Program.selectedProduct.condition;
@@ -83,9 +88,9 @@ namespace Assignment4
             txt_total.Text = String.Format("{0:C}", (Program.selectedProduct.cost + Program.selectedProduct.cost * tax));
         }
 
-        //--------------------------------------------------------------------------------------------------------
+        
         // Go back to the product info form
-        //--------------------------------------------------------------------------------------------------------
+      
         private void btn_back_Click(object sender, EventArgs e)
         {
             previousForm.Show();

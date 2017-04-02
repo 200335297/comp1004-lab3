@@ -9,6 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Assignment4.Modules;
 
+/*Name:-Gowtham Talluri
+ StudentID :- 200335297
+ App:-Dollar Computer
+ Description:- Online computer sale cart
+ */
+
 namespace Assignment4
 {
     public partial class SelectForm : Form
@@ -21,9 +27,9 @@ namespace Assignment4
             InitializeComponent();
         }
 
-        //--------------------------------------------------------------------------------------------------------
+        
         // Call getProducts() - get data from DB
-        //--------------------------------------------------------------------------------------------------------
+
         private void SelectForm_Load(object sender, EventArgs e)
         {
             getProducts();
@@ -32,9 +38,9 @@ namespace Assignment4
 
 
 
-        //--------------------------------------------------------------------------------------------------------
+        
         // Get products table from database and use that in the datagridview
-        //--------------------------------------------------------------------------------------------------------
+       
         private void getProducts()
         {
             // use LINQ to access the table in the DB
@@ -45,10 +51,10 @@ namespace Assignment4
             dataGridView_products.DataSource = productList;
         }
 
-        //--------------------------------------------------------------------------------------------------------
+       
         // Get productID from selected cell in datagridview, set the selectedProduct object,
-        // display in textbox
-        //--------------------------------------------------------------------------------------------------------
+      
+       
         private void getSelectedProductData(short ProductID)
         {
             
@@ -64,17 +70,17 @@ namespace Assignment4
             txt_selected.Text = productInfo;
         }
 
-        //--------------------------------------------------------------------------------------------------------
-        // Close the app
+       
+        // Close the application
         //--------------------------------------------------------------------------------------------------------
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        //--------------------------------------------------------------------------------------------------------
+       
         // Open the product info form
-        //--------------------------------------------------------------------------------------------------------
+        
         private void btn_next_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -82,7 +88,7 @@ namespace Assignment4
             productInfoForm.previousForm = this;
             productInfoForm.Show();
         }
-
+        //selected cell coloun number retrived
         private void dataGridView_products_SelectionChanged(object sender, EventArgs e)
         {
             var rowindex = dataGridView_products.CurrentRow.Index;

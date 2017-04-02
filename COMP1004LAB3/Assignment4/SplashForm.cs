@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*Name:-Gowtham Talluri
+ StudentID :- 200335297
+ App:-Dollar Computer
+ Description:- Online computer sale cart
+ */
+
 namespace Assignment4
 {
     public partial class SplashForm : Form

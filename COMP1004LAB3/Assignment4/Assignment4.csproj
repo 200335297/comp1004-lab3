@@ -142,6 +142,24 @@
   <ItemGroup>
     <None Include="Resources\comp3.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_rsz_1image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_1image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-design_1156-101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_image23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_image23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_11rsz_image23.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

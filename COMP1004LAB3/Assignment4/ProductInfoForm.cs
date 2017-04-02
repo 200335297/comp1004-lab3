@@ -10,10 +10,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Assignment4.Modules;
 
+/*Name:-Gowtham Talluri
+ StudentID :- 200335297
+ App:-Dollar Computer
+ Description:- Online computer sale cart
+ */
+
 namespace Assignment4
 {
     public partial class ProductInfoForm : Form
-    { // connect to DB using Entity Framework
+    { 
+        // connect to DB using Entity Framework
         ProductsContext db = new ProductsContext();
 
         public Form previousForm;
@@ -24,9 +31,9 @@ namespace Assignment4
             InitializeComponent();
         }
 
-        //--------------------------------------------------------------------------------------------------------
-        // Populate the text fields if there is a product object, otherwise start the timer (user is loading)
-        //--------------------------------------------------------------------------------------------------------
+        
+        // Populate the text fields if there is a product object
+       
         private void ProductInfoForm_Load(object sender, EventArgs e)
         {
             // If there is data to display
@@ -52,16 +59,16 @@ namespace Assignment4
                 // enable next button
                 btn_next.Enabled = true;
             }
-            // there is no selected product, start the timer
+            
             else
             {
                 timer1.Start();
             }
         }
 
-        //--------------------------------------------------------------------------------------------------------
-        // Load a txt file, populate the text fields and store the loaded product in the public static product object
-        //--------------------------------------------------------------------------------------------------------
+       
+        // Load a txt file
+    
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // set filter for and show the open file dialog 
@@ -101,9 +108,8 @@ namespace Assignment4
             }
         }
 
-        //--------------------------------------------------------------------------------------------------------
-        // Write to a txt file and save it
-        //--------------------------------------------------------------------------------------------------------
+        // write text file to save
+
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // create string of content to be saved
@@ -137,26 +143,23 @@ namespace Assignment4
             }
         }
 
-        //--------------------------------------------------------------------------------------------------------
-        // Close app
-        //--------------------------------------------------------------------------------------------------------
+        // application close
+      
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        //--------------------------------------------------------------------------------------------------------
+        
         // Go back to the select form
-        //--------------------------------------------------------------------------------------------------------
+       
         private void btn_selectAnotherProduct_Click(object sender, EventArgs e)
         {
             previousForm.Show();
             this.Close();
         }
 
-        //--------------------------------------------------------------------------------------------------------
         // Open order form
-        //--------------------------------------------------------------------------------------------------------
+      
         private void btn_next_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -165,9 +168,9 @@ namespace Assignment4
             orderForm.Show();
         }
 
-        //--------------------------------------------------------------------------------------------------------
+  
         // Execute the 'Open' menu strip click event when the timer is up
-        //--------------------------------------------------------------------------------------------------------
+      
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();

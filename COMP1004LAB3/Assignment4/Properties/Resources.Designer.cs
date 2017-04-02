@@ -73,9 +73,9 @@ namespace Assignment4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap comp3 {
+        internal static System.Drawing.Bitmap rsz_11rsz_image23 {
             get {
-                object obj = ResourceManager.GetObject("comp3", resourceCulture);
+                object obj = ResourceManager.GetObject("rsz_11rsz_image23", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +86,16 @@ namespace Assignment4.Properties {
         internal static System.Drawing.Bitmap rsz_1image1 {
             get {
                 object obj = ResourceManager.GetObject("rsz_1image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1rsz_1image1 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1rsz_1image1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
