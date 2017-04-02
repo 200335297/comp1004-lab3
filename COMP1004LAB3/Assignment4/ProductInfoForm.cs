@@ -16,5 +16,22 @@ namespace Assignment4
         {
             InitializeComponent();
         }
+
+       
+
+        private void btn_selectAnotherProduct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

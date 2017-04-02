@@ -28,68 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.components = new System.ComponentModel.Container();
+            this.menuStrip_productInfo = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAnotherProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFD_productInfo = new System.Windows.Forms.OpenFileDialog();
+            this.saveFD_productInfo = new System.Windows.Forms.SaveFileDialog();
             this.label1 = new System.Windows.Forms.Label();
-            this.productIDTextBox = new System.Windows.Forms.TextBox();
+            this.txt_productID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.conditionTextBox = new System.Windows.Forms.TextBox();
+            this.txt_condition = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.costTextBox = new System.Windows.Forms.TextBox();
+            this.txt_cost = new System.Windows.Forms.TextBox();
             this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.modelTextBox = new System.Windows.Forms.TextBox();
+            this.txt_model = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.OSTextBox = new System.Windows.Forms.TextBox();
+            this.txt_OS = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.manufacturerTextBox = new System.Windows.Forms.TextBox();
+            this.txt_manufacturer = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.platformTextBox = new System.Windows.Forms.TextBox();
+            this.txt_platform = new System.Windows.Forms.TextBox();
             this.TechSpecsGroupBox = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.webcamTextBox = new System.Windows.Forms.TextBox();
+            this.txt_webcam = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.GPU_TypeTextBox = new System.Windows.Forms.TextBox();
+            this.txt_gpuType = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.HDD_sizeTextBox = new System.Windows.Forms.TextBox();
+            this.txt_HDD = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.CPU_speedTextBox = new System.Windows.Forms.TextBox();
+            this.txt_cpuSpeed = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.CPU_numberTextBox = new System.Windows.Forms.TextBox();
+            this.txt_cpuNumber = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.screensizeTextBox = new System.Windows.Forms.TextBox();
+            this.txt_lcdSize = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.CPU_typeTextBox = new System.Windows.Forms.TextBox();
+            this.txt_cpuType = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.CPU_brandTextBox = new System.Windows.Forms.TextBox();
+            this.txt_cpuBrand = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.RAM_sizeTextBox = new System.Windows.Forms.TextBox();
+            this.txt_memory = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.SelectButton = new System.Windows.Forms.Button();
-            this.CancelButton1 = new System.Windows.Forms.Button();
-            this.NextButton = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.btn_selectAnotherProduct = new System.Windows.Forms.Button();
+            this.btn_cancel = new System.Windows.Forms.Button();
+            this.btn_next = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip_productInfo.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.TechSpecsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStrip_productInfo
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip_productInfo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(701, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip_productInfo.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip_productInfo.Name = "menuStrip_productInfo";
+            this.menuStrip_productInfo.Size = new System.Drawing.Size(754, 24);
+            this.menuStrip_productInfo.TabIndex = 0;
+            this.menuStrip_productInfo.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -104,19 +106,19 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -133,10 +135,6 @@
             this.selectAnotherProductToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.selectAnotherProductToolStripMenuItem.Text = "Se&lect Another Product";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -146,15 +144,15 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Product ID";
             // 
-            // productIDTextBox
+            // txt_productID
             // 
-            this.productIDTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.productIDTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.productIDTextBox.Location = new System.Drawing.Point(76, 45);
-            this.productIDTextBox.Name = "productIDTextBox";
-            this.productIDTextBox.ReadOnly = true;
-            this.productIDTextBox.Size = new System.Drawing.Size(100, 20);
-            this.productIDTextBox.TabIndex = 4;
+            this.txt_productID.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_productID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_productID.Location = new System.Drawing.Point(76, 45);
+            this.txt_productID.Name = "txt_productID";
+            this.txt_productID.ReadOnly = true;
+            this.txt_productID.Size = new System.Drawing.Size(100, 20);
+            this.txt_productID.TabIndex = 4;
             // 
             // label2
             // 
@@ -165,15 +163,15 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Condition";
             // 
-            // conditionTextBox
+            // txt_condition
             // 
-            this.conditionTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.conditionTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.conditionTextBox.Location = new System.Drawing.Point(338, 45);
-            this.conditionTextBox.Name = "conditionTextBox";
-            this.conditionTextBox.ReadOnly = true;
-            this.conditionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.conditionTextBox.TabIndex = 6;
+            this.txt_condition.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_condition.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_condition.Location = new System.Drawing.Point(338, 45);
+            this.txt_condition.Name = "txt_condition";
+            this.txt_condition.ReadOnly = true;
+            this.txt_condition.Size = new System.Drawing.Size(100, 20);
+            this.txt_condition.TabIndex = 6;
             // 
             // label3
             // 
@@ -184,26 +182,26 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Cost";
             // 
-            // costTextBox
+            // txt_cost
             // 
-            this.costTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.costTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.costTextBox.Location = new System.Drawing.Point(568, 45);
-            this.costTextBox.Name = "costTextBox";
-            this.costTextBox.ReadOnly = true;
-            this.costTextBox.Size = new System.Drawing.Size(100, 20);
-            this.costTextBox.TabIndex = 8;
+            this.txt_cost.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_cost.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_cost.Location = new System.Drawing.Point(568, 45);
+            this.txt_cost.Name = "txt_cost";
+            this.txt_cost.ReadOnly = true;
+            this.txt_cost.Size = new System.Drawing.Size(100, 20);
+            this.txt_cost.TabIndex = 8;
             // 
             // ProductInfoGroupBox
             // 
             this.ProductInfoGroupBox.Controls.Add(this.label7);
-            this.ProductInfoGroupBox.Controls.Add(this.modelTextBox);
+            this.ProductInfoGroupBox.Controls.Add(this.txt_model);
             this.ProductInfoGroupBox.Controls.Add(this.label6);
-            this.ProductInfoGroupBox.Controls.Add(this.OSTextBox);
+            this.ProductInfoGroupBox.Controls.Add(this.txt_OS);
             this.ProductInfoGroupBox.Controls.Add(this.label5);
-            this.ProductInfoGroupBox.Controls.Add(this.manufacturerTextBox);
+            this.ProductInfoGroupBox.Controls.Add(this.txt_manufacturer);
             this.ProductInfoGroupBox.Controls.Add(this.label4);
-            this.ProductInfoGroupBox.Controls.Add(this.platformTextBox);
+            this.ProductInfoGroupBox.Controls.Add(this.txt_platform);
             this.ProductInfoGroupBox.Location = new System.Drawing.Point(15, 86);
             this.ProductInfoGroupBox.Name = "ProductInfoGroupBox";
             this.ProductInfoGroupBox.Size = new System.Drawing.Size(664, 73);
@@ -220,15 +218,15 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Model";
             // 
-            // modelTextBox
+            // txt_model
             // 
-            this.modelTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.modelTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.modelTextBox.Location = new System.Drawing.Point(314, 45);
-            this.modelTextBox.Name = "modelTextBox";
-            this.modelTextBox.ReadOnly = true;
-            this.modelTextBox.Size = new System.Drawing.Size(339, 20);
-            this.modelTextBox.TabIndex = 15;
+            this.txt_model.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_model.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_model.Location = new System.Drawing.Point(314, 45);
+            this.txt_model.Name = "txt_model";
+            this.txt_model.ReadOnly = true;
+            this.txt_model.Size = new System.Drawing.Size(339, 20);
+            this.txt_model.TabIndex = 15;
             // 
             // label6
             // 
@@ -239,15 +237,15 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "OS";
             // 
-            // OSTextBox
+            // txt_OS
             // 
-            this.OSTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.OSTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.OSTextBox.Location = new System.Drawing.Point(314, 19);
-            this.OSTextBox.Name = "OSTextBox";
-            this.OSTextBox.ReadOnly = true;
-            this.OSTextBox.Size = new System.Drawing.Size(339, 20);
-            this.OSTextBox.TabIndex = 13;
+            this.txt_OS.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_OS.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_OS.Location = new System.Drawing.Point(314, 19);
+            this.txt_OS.Name = "txt_OS";
+            this.txt_OS.ReadOnly = true;
+            this.txt_OS.Size = new System.Drawing.Size(339, 20);
+            this.txt_OS.TabIndex = 13;
             // 
             // label5
             // 
@@ -258,15 +256,15 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Manufacturer";
             // 
-            // manufacturerTextBox
+            // txt_manufacturer
             // 
-            this.manufacturerTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.manufacturerTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.manufacturerTextBox.Location = new System.Drawing.Point(87, 45);
-            this.manufacturerTextBox.Name = "manufacturerTextBox";
-            this.manufacturerTextBox.ReadOnly = true;
-            this.manufacturerTextBox.Size = new System.Drawing.Size(100, 20);
-            this.manufacturerTextBox.TabIndex = 11;
+            this.txt_manufacturer.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_manufacturer.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_manufacturer.Location = new System.Drawing.Point(87, 45);
+            this.txt_manufacturer.Name = "txt_manufacturer";
+            this.txt_manufacturer.ReadOnly = true;
+            this.txt_manufacturer.Size = new System.Drawing.Size(100, 20);
+            this.txt_manufacturer.TabIndex = 11;
             // 
             // label4
             // 
@@ -277,36 +275,36 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Platform";
             // 
-            // platformTextBox
+            // txt_platform
             // 
-            this.platformTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.platformTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.platformTextBox.Location = new System.Drawing.Point(87, 19);
-            this.platformTextBox.Name = "platformTextBox";
-            this.platformTextBox.ReadOnly = true;
-            this.platformTextBox.Size = new System.Drawing.Size(100, 20);
-            this.platformTextBox.TabIndex = 9;
+            this.txt_platform.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_platform.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_platform.Location = new System.Drawing.Point(87, 19);
+            this.txt_platform.Name = "txt_platform";
+            this.txt_platform.ReadOnly = true;
+            this.txt_platform.Size = new System.Drawing.Size(100, 20);
+            this.txt_platform.TabIndex = 9;
             // 
             // TechSpecsGroupBox
             // 
             this.TechSpecsGroupBox.Controls.Add(this.label14);
-            this.TechSpecsGroupBox.Controls.Add(this.webcamTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_webcam);
             this.TechSpecsGroupBox.Controls.Add(this.label15);
-            this.TechSpecsGroupBox.Controls.Add(this.GPU_TypeTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_gpuType);
             this.TechSpecsGroupBox.Controls.Add(this.label16);
-            this.TechSpecsGroupBox.Controls.Add(this.HDD_sizeTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_HDD);
             this.TechSpecsGroupBox.Controls.Add(this.label11);
-            this.TechSpecsGroupBox.Controls.Add(this.CPU_speedTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_cpuSpeed);
             this.TechSpecsGroupBox.Controls.Add(this.label12);
-            this.TechSpecsGroupBox.Controls.Add(this.CPU_numberTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_cpuNumber);
             this.TechSpecsGroupBox.Controls.Add(this.label13);
-            this.TechSpecsGroupBox.Controls.Add(this.screensizeTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_lcdSize);
             this.TechSpecsGroupBox.Controls.Add(this.label10);
-            this.TechSpecsGroupBox.Controls.Add(this.CPU_typeTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_cpuType);
             this.TechSpecsGroupBox.Controls.Add(this.label9);
-            this.TechSpecsGroupBox.Controls.Add(this.CPU_brandTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_cpuBrand);
             this.TechSpecsGroupBox.Controls.Add(this.label8);
-            this.TechSpecsGroupBox.Controls.Add(this.RAM_sizeTextBox);
+            this.TechSpecsGroupBox.Controls.Add(this.txt_memory);
             this.TechSpecsGroupBox.Location = new System.Drawing.Point(15, 184);
             this.TechSpecsGroupBox.Name = "TechSpecsGroupBox";
             this.TechSpecsGroupBox.Size = new System.Drawing.Size(664, 105);
@@ -323,15 +321,15 @@
             this.label14.TabIndex = 34;
             this.label14.Text = "WebCam";
             // 
-            // webcamTextBox
+            // txt_webcam
             // 
-            this.webcamTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.webcamTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.webcamTextBox.Location = new System.Drawing.Point(435, 71);
-            this.webcamTextBox.Name = "webcamTextBox";
-            this.webcamTextBox.ReadOnly = true;
-            this.webcamTextBox.Size = new System.Drawing.Size(218, 20);
-            this.webcamTextBox.TabIndex = 33;
+            this.txt_webcam.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_webcam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_webcam.Location = new System.Drawing.Point(435, 71);
+            this.txt_webcam.Name = "txt_webcam";
+            this.txt_webcam.ReadOnly = true;
+            this.txt_webcam.Size = new System.Drawing.Size(218, 20);
+            this.txt_webcam.TabIndex = 33;
             // 
             // label15
             // 
@@ -342,15 +340,15 @@
             this.label15.TabIndex = 32;
             this.label15.Text = "GPU Type";
             // 
-            // GPU_TypeTextBox
+            // txt_gpuType
             // 
-            this.GPU_TypeTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.GPU_TypeTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.GPU_TypeTextBox.Location = new System.Drawing.Point(435, 45);
-            this.GPU_TypeTextBox.Name = "GPU_TypeTextBox";
-            this.GPU_TypeTextBox.ReadOnly = true;
-            this.GPU_TypeTextBox.Size = new System.Drawing.Size(218, 20);
-            this.GPU_TypeTextBox.TabIndex = 31;
+            this.txt_gpuType.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_gpuType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_gpuType.Location = new System.Drawing.Point(435, 45);
+            this.txt_gpuType.Name = "txt_gpuType";
+            this.txt_gpuType.ReadOnly = true;
+            this.txt_gpuType.Size = new System.Drawing.Size(218, 20);
+            this.txt_gpuType.TabIndex = 31;
             // 
             // label16
             // 
@@ -361,15 +359,15 @@
             this.label16.TabIndex = 30;
             this.label16.Text = "HDD";
             // 
-            // HDD_sizeTextBox
+            // txt_HDD
             // 
-            this.HDD_sizeTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.HDD_sizeTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.HDD_sizeTextBox.Location = new System.Drawing.Point(435, 19);
-            this.HDD_sizeTextBox.Name = "HDD_sizeTextBox";
-            this.HDD_sizeTextBox.ReadOnly = true;
-            this.HDD_sizeTextBox.Size = new System.Drawing.Size(218, 20);
-            this.HDD_sizeTextBox.TabIndex = 29;
+            this.txt_HDD.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_HDD.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_HDD.Location = new System.Drawing.Point(435, 19);
+            this.txt_HDD.Name = "txt_HDD";
+            this.txt_HDD.ReadOnly = true;
+            this.txt_HDD.Size = new System.Drawing.Size(218, 20);
+            this.txt_HDD.TabIndex = 29;
             // 
             // label11
             // 
@@ -380,15 +378,15 @@
             this.label11.TabIndex = 28;
             this.label11.Text = "CPU Speed";
             // 
-            // CPU_speedTextBox
+            // txt_cpuSpeed
             // 
-            this.CPU_speedTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.CPU_speedTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.CPU_speedTextBox.Location = new System.Drawing.Point(254, 71);
-            this.CPU_speedTextBox.Name = "CPU_speedTextBox";
-            this.CPU_speedTextBox.ReadOnly = true;
-            this.CPU_speedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.CPU_speedTextBox.TabIndex = 27;
+            this.txt_cpuSpeed.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_cpuSpeed.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_cpuSpeed.Location = new System.Drawing.Point(254, 71);
+            this.txt_cpuSpeed.Name = "txt_cpuSpeed";
+            this.txt_cpuSpeed.ReadOnly = true;
+            this.txt_cpuSpeed.Size = new System.Drawing.Size(100, 20);
+            this.txt_cpuSpeed.TabIndex = 27;
             // 
             // label12
             // 
@@ -399,15 +397,15 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "CPU Number";
             // 
-            // CPU_numberTextBox
+            // txt_cpuNumber
             // 
-            this.CPU_numberTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.CPU_numberTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.CPU_numberTextBox.Location = new System.Drawing.Point(254, 45);
-            this.CPU_numberTextBox.Name = "CPU_numberTextBox";
-            this.CPU_numberTextBox.ReadOnly = true;
-            this.CPU_numberTextBox.Size = new System.Drawing.Size(100, 20);
-            this.CPU_numberTextBox.TabIndex = 25;
+            this.txt_cpuNumber.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_cpuNumber.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_cpuNumber.Location = new System.Drawing.Point(254, 45);
+            this.txt_cpuNumber.Name = "txt_cpuNumber";
+            this.txt_cpuNumber.ReadOnly = true;
+            this.txt_cpuNumber.Size = new System.Drawing.Size(100, 20);
+            this.txt_cpuNumber.TabIndex = 25;
             // 
             // label13
             // 
@@ -418,15 +416,15 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "LCD Size";
             // 
-            // screensizeTextBox
+            // txt_lcdSize
             // 
-            this.screensizeTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.screensizeTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.screensizeTextBox.Location = new System.Drawing.Point(254, 19);
-            this.screensizeTextBox.Name = "screensizeTextBox";
-            this.screensizeTextBox.ReadOnly = true;
-            this.screensizeTextBox.Size = new System.Drawing.Size(100, 20);
-            this.screensizeTextBox.TabIndex = 23;
+            this.txt_lcdSize.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_lcdSize.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_lcdSize.Location = new System.Drawing.Point(254, 19);
+            this.txt_lcdSize.Name = "txt_lcdSize";
+            this.txt_lcdSize.ReadOnly = true;
+            this.txt_lcdSize.Size = new System.Drawing.Size(100, 20);
+            this.txt_lcdSize.TabIndex = 23;
             // 
             // label10
             // 
@@ -437,15 +435,15 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "CPU Type";
             // 
-            // CPU_typeTextBox
+            // txt_cpuType
             // 
-            this.CPU_typeTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.CPU_typeTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.CPU_typeTextBox.Location = new System.Drawing.Point(73, 71);
-            this.CPU_typeTextBox.Name = "CPU_typeTextBox";
-            this.CPU_typeTextBox.ReadOnly = true;
-            this.CPU_typeTextBox.Size = new System.Drawing.Size(100, 20);
-            this.CPU_typeTextBox.TabIndex = 21;
+            this.txt_cpuType.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_cpuType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_cpuType.Location = new System.Drawing.Point(73, 71);
+            this.txt_cpuType.Name = "txt_cpuType";
+            this.txt_cpuType.ReadOnly = true;
+            this.txt_cpuType.Size = new System.Drawing.Size(100, 20);
+            this.txt_cpuType.TabIndex = 21;
             // 
             // label9
             // 
@@ -456,15 +454,15 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "CPU Brand";
             // 
-            // CPU_brandTextBox
+            // txt_cpuBrand
             // 
-            this.CPU_brandTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.CPU_brandTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.CPU_brandTextBox.Location = new System.Drawing.Point(73, 45);
-            this.CPU_brandTextBox.Name = "CPU_brandTextBox";
-            this.CPU_brandTextBox.ReadOnly = true;
-            this.CPU_brandTextBox.Size = new System.Drawing.Size(100, 20);
-            this.CPU_brandTextBox.TabIndex = 19;
+            this.txt_cpuBrand.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_cpuBrand.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_cpuBrand.Location = new System.Drawing.Point(73, 45);
+            this.txt_cpuBrand.Name = "txt_cpuBrand";
+            this.txt_cpuBrand.ReadOnly = true;
+            this.txt_cpuBrand.Size = new System.Drawing.Size(100, 20);
+            this.txt_cpuBrand.TabIndex = 19;
             // 
             // label8
             // 
@@ -475,74 +473,79 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "Memory";
             // 
-            // RAM_sizeTextBox
+            // txt_memory
             // 
-            this.RAM_sizeTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.RAM_sizeTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.RAM_sizeTextBox.Location = new System.Drawing.Point(73, 19);
-            this.RAM_sizeTextBox.Name = "RAM_sizeTextBox";
-            this.RAM_sizeTextBox.ReadOnly = true;
-            this.RAM_sizeTextBox.Size = new System.Drawing.Size(100, 20);
-            this.RAM_sizeTextBox.TabIndex = 17;
+            this.txt_memory.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_memory.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_memory.Location = new System.Drawing.Point(73, 19);
+            this.txt_memory.Name = "txt_memory";
+            this.txt_memory.ReadOnly = true;
+            this.txt_memory.Size = new System.Drawing.Size(100, 20);
+            this.txt_memory.TabIndex = 17;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(30, 321);
+            this.label17.Location = new System.Drawing.Point(51, 326);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(177, 13);
             this.label17.TabIndex = 11;
             this.label17.Text = "Click Next to Confirm Your Selection";
             // 
-            // SelectButton
+            // btn_selectAnotherProduct
             // 
-            this.SelectButton.Location = new System.Drawing.Point(338, 316);
-            this.SelectButton.Name = "SelectButton";
-            this.SelectButton.Size = new System.Drawing.Size(148, 23);
-            this.SelectButton.TabIndex = 13;
-            this.SelectButton.Text = "Select Another Product";
-            this.SelectButton.UseVisualStyleBackColor = true;
+            this.btn_selectAnotherProduct.Location = new System.Drawing.Point(291, 316);
+            this.btn_selectAnotherProduct.Name = "btn_selectAnotherProduct";
+            this.btn_selectAnotherProduct.Size = new System.Drawing.Size(157, 29);
+            this.btn_selectAnotherProduct.TabIndex = 13;
+            this.btn_selectAnotherProduct.Text = "Select Another Product";
+            this.btn_selectAnotherProduct.UseVisualStyleBackColor = true;
+            this.btn_selectAnotherProduct.Click += new System.EventHandler(this.btn_selectAnotherProduct_Click);
             // 
-            // CancelButton1
+            // btn_cancel
             // 
-            this.CancelButton1.Location = new System.Drawing.Point(507, 316);
-            this.CancelButton1.Name = "CancelButton1";
-            this.CancelButton1.Size = new System.Drawing.Size(75, 23);
-            this.CancelButton1.TabIndex = 14;
-            this.CancelButton1.Text = "Cancel";
-            this.CancelButton1.UseVisualStyleBackColor = true;
+            this.btn_cancel.Location = new System.Drawing.Point(478, 319);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(84, 26);
+            this.btn_cancel.TabIndex = 14;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
-            // NextButton
+            // btn_next
             // 
-            this.NextButton.Location = new System.Drawing.Point(604, 316);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(75, 23);
-            this.NextButton.TabIndex = 15;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
+            this.btn_next.Location = new System.Drawing.Point(593, 319);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.Size = new System.Drawing.Size(86, 26);
+            this.btn_next.TabIndex = 15;
+            this.btn_next.Text = "Next";
+            this.btn_next.UseVisualStyleBackColor = true;
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 357);
-            this.Controls.Add(this.NextButton);
-            this.Controls.Add(this.CancelButton1);
-            this.Controls.Add(this.SelectButton);
+            this.ClientSize = new System.Drawing.Size(754, 357);
+            this.ControlBox = false;
+            this.Controls.Add(this.btn_next);
+            this.Controls.Add(this.btn_cancel);
+            this.Controls.Add(this.btn_selectAnotherProduct);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.TechSpecsGroupBox);
             this.Controls.Add(this.ProductInfoGroupBox);
-            this.Controls.Add(this.costTextBox);
+            this.Controls.Add(this.txt_cost);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.conditionTextBox);
+            this.Controls.Add(this.txt_condition);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.productIDTextBox);
+            this.Controls.Add(this.txt_productID);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip_productInfo);
             this.Name = "ProductInfoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStrip_productInfo.ResumeLayout(false);
+            this.menuStrip_productInfo.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
             this.ProductInfoGroupBox.PerformLayout();
             this.TechSpecsGroupBox.ResumeLayout(false);
@@ -554,52 +557,53 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip_productInfo;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectAnotherProductToolStripMenuItem;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFD_productInfo;
+        private System.Windows.Forms.SaveFileDialog saveFD_productInfo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox productIDTextBox;
+        private System.Windows.Forms.TextBox txt_productID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox conditionTextBox;
+        private System.Windows.Forms.TextBox txt_condition;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox costTextBox;
+        private System.Windows.Forms.TextBox txt_cost;
         private System.Windows.Forms.GroupBox ProductInfoGroupBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox modelTextBox;
+        private System.Windows.Forms.TextBox txt_model;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox OSTextBox;
+        private System.Windows.Forms.TextBox txt_OS;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox manufacturerTextBox;
+        private System.Windows.Forms.TextBox txt_manufacturer;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox platformTextBox;
+        private System.Windows.Forms.TextBox txt_platform;
         private System.Windows.Forms.GroupBox TechSpecsGroupBox;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox webcamTextBox;
+        private System.Windows.Forms.TextBox txt_webcam;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox GPU_TypeTextBox;
+        private System.Windows.Forms.TextBox txt_gpuType;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox HDD_sizeTextBox;
+        private System.Windows.Forms.TextBox txt_HDD;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox CPU_speedTextBox;
+        private System.Windows.Forms.TextBox txt_cpuSpeed;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox CPU_numberTextBox;
+        private System.Windows.Forms.TextBox txt_cpuNumber;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox screensizeTextBox;
+        private System.Windows.Forms.TextBox txt_lcdSize;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox CPU_typeTextBox;
+        private System.Windows.Forms.TextBox txt_cpuType;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox CPU_brandTextBox;
+        private System.Windows.Forms.TextBox txt_cpuBrand;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox RAM_sizeTextBox;
+        private System.Windows.Forms.TextBox txt_memory;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button SelectButton;
-        private System.Windows.Forms.Button CancelButton1;
-        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button btn_selectAnotherProduct;
+        private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.Button btn_next;
+        private System.Windows.Forms.Timer timer1;
     }
 }
