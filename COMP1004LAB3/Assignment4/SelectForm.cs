@@ -35,7 +35,7 @@ namespace Assignment4
             List<product> productList = (from product in db.products select product).ToList();
 
             // fill data grid view from product list
-            ProductsDataGridView.DataSource = productList;
+            dataGridView_products.DataSource = productList;
         }
         /// <summary>
         /// highlight the row and unlock next button
@@ -46,7 +46,7 @@ namespace Assignment4
             if (e.RowIndex != -1)
             {
                 // row selected
-                var row = ProductsDataGridView.Rows[e.RowIndex];
+                var row = dataGridView_products.Rows[e.RowIndex];
                 row.Selected = true;
                 // get product ID
                 int selectedProductID = Convert.ToInt32(row.Cells[0].Value);
@@ -60,10 +60,10 @@ namespace Assignment4
                 fillProductObject(selectedProduct);
 
                 // put data from object to text field
-                SummaryTextBox.Text = orderedProduct.manufacturer + " " + orderedProduct.model +
+                txt_selected.Text = orderedProduct.manufacturer + " " + orderedProduct.model +
                     ". Priced at: $" + Math.Round(Convert.ToDouble(orderedProduct.cost), 2);
                 // unlock next button
-                NextButton.Enabled = true;
+                btn_next.Enabled = true;
             }
 
         }
@@ -145,6 +145,19 @@ namespace Assignment4
             getProducts();
         }
 
-      
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView_products_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
