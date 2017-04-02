@@ -11,10 +11,39 @@ using System.Windows.Forms;
 namespace Assignment4
 {
     public partial class StartForm : Form
-    {
+    { // CONSTRUCTOR
         public StartForm()
         {
             InitializeComponent();
+        }
+
+        //--------------------------------------------------------------------------------------------------------
+        // Go to the select form
+        //--------------------------------------------------------------------------------------------------------
+        private void btn_newOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SelectForm selectForm = new SelectForm();
+            selectForm.Show();
+        }
+
+        //--------------------------------------------------------------------------------------------------------
+        // Go to the product info form
+        //--------------------------------------------------------------------------------------------------------
+        private void btn_loadOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ProductInfoForm productInfoForm = new ProductInfoForm();
+            //productInfoForm.previousForm = this;
+            productInfoForm.Show();
+        }
+
+        //--------------------------------------------------------------------------------------------------------
+        // Close the app
+        //--------------------------------------------------------------------------------------------------------
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

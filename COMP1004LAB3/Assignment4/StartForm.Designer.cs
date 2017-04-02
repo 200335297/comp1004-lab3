@@ -62,8 +62,9 @@
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(198, 33);
             this.StartButton.TabIndex = 4;
-            this.StartButton.Text = "Start A New Order";
+            this.StartButton.Text = "New Order";
             this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.btn_newOrder_Click);
             // 
             // OpenButton
             // 
@@ -71,8 +72,9 @@
             this.OpenButton.Name = "OpenButton";
             this.OpenButton.Size = new System.Drawing.Size(205, 33);
             this.OpenButton.TabIndex = 5;
-            this.OpenButton.Text = "Open a Saved Order";
+            this.OpenButton.Text = "Load Order";
             this.OpenButton.UseVisualStyleBackColor = true;
+            this.OpenButton.Click += new System.EventHandler(this.btn_loadOrder_Click);
             // 
             // ExitButton
             // 
@@ -82,6 +84,7 @@
             this.ExitButton.TabIndex = 6;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // StartForm
             // 
