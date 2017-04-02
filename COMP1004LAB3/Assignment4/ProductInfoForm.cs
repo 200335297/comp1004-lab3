@@ -161,7 +161,7 @@ namespace Assignment4
         {
             this.Hide();
             OrderForm orderForm = new OrderForm();
-            //orderForm.previousForm = this;
+            orderForm.previousForm = this;
             orderForm.Show();
         }
 
